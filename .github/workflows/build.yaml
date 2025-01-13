@@ -43,7 +43,7 @@ jobs:
         bibtex2html.py robert/references.bib robert/references.html -i "{'show_paper_style':'year'}"
         bibtex2html.py vendela/references.bib vendela/references.html -i "{'show_paper_style':'year'}"
         bibtex2html.py project/publications.bib project/publications.html -i "{'show_paper_style':'year'}"
-        bibtex2html.py project/talks.bib projects/talks.html -i "{'show_paper_style':'year'}"
+        bibtex2html.py project/talks.bib project/talks.html -i "{'show_paper_style':'year'}"
         cd -
 
     - name: build static site
