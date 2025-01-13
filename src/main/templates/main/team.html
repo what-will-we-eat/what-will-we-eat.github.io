@@ -1,0 +1,51 @@
+{% extends 'main/not-home.html' %}
+{% load static %}
+{% block nothome%}
+<style>
+.pubList{
+    list-style-type:none;
+    color: #eaeded;
+    padding-left:1em;
+}
+.pubP:first-child {
+margin-left:0;
+color: #eaeded;
+    text-indent:-1em;
+}
+.pubP > span  {
+color: #eaeded;
+    padding-left:0;
+    text-indent:0;
+}
+a {
+color: #eaeded;
+    padding-left:0;
+    text-indent:0;
+
+}
+</style>
+
+    <div id="not-home-content">
+        <h1>Project Members</h1>
+        <hr style="border-color:gray">
+        {% for name, info in team.items %}
+            {{ info.bio|safe }}
+            {% if info.recent_publications is not null %}
+                <h3>Recent Publications</h3>
+                <ul class="pubList">
+                {% for pub in info.recent_publications %}
+                    {{ pub|safe }}
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% if info.links is not null %}
+                <h3>See also</h3>
+                <ul>
+                {% for link in info.links %}
+                    <li>{{ link.0 }}: <a href="{{ link.1.0 }}" target="_blank">{{ link.1.1 }}</a></li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

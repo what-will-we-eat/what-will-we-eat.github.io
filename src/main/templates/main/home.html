@@ -1,0 +1,16 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+    <div id="home-div">
+        <div id="header-text-container">
+            <div id="header-text">
+                <p>What will we eat?</p>
+            </div>
+        </div>
+        {% include 'main/navigation.html' %}
+        {% block home %}{% endblock %}
+        <div id="cassava">
+            <img src="{% static 'main/img/cassava.png' %}"/>
+        </div>
+    </div>
+{% endblock %}

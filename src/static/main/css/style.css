@@ -1,0 +1,45 @@
+
+
+body {
+ margin:0 auto;
+ text-align: left;
+ }
+
+span.selected {color: #000000}
+span.author {color: #000000}
+span.title {font-weight: bold;  color:#1030FF;   }
+span.publisher {      font-style: italic;     }
+span.hlnote0 {   }
+span.hlnote { font-weight: bold;   }
+span.hlnote2 { font-weight: bold;  color:#FF0000;  }
+li {margin-top: 0px; margin-bottom: 16px}
+
+
+.abstract {
+  font-size: 80%;
+  background-color: #fcfcfc;
+  border: 1px #ccc solid;
+}
+
+.bibtex {
+  font-size: 80%;
+  background-color: #fcfcfc;
+  border: 1px #ccc solid;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 14px;
+    font-size: 18px;
+}
+
+.modal-dialog {
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+  margin:0;
+  left:auto;
+  right:auto;
+}

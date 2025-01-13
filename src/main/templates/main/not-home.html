@@ -1,0 +1,11 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+    <div id="not-home-div">
+        {% include 'main/navigation.html' %}
+        {% block nothome %}{% endblock %}
+    </div>
+        <div id="veggies">
+            <img src="{% static 'main/img/veggies.jpg' %}"/>
+        </div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'main/not-home.html' %}
+{% load static %}
+{% block nothome %}
+<style>
+.pubList{
+    list-style-type:none;
+    color: #eaeded;
+    padding-left:1em;
+}
+.pubP:first-child {
+margin-left:0;
+color: #eaeded;
+    text-indent:-1em;
+}
+.pubP > span  {
+color: #eaeded;
+    padding-left:0;
+    text-indent:0;
+}
+a {
+color: #eaeded;
+    padding-left:0;
+    text-indent:0;
+
+}
+</style>
+    <div id="not-home-content">
+        <h1>Research Output</h1>
+        <hr style="border-color:gray">
+        <h2>Published works</h2>
+        {% if publications is not null %}
+            <ul class="pubList">
+            {% for publication in publications %}
+                {{ publication|safe }}
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No work has been published yet. Check back later.
+        {% endif %}
+        <h2>Talks and Lectures</h2>
+        {% if talks is not null %}
+            <ul class="pubList">
+            {% for talk in talks %}
+                {{ talk|safe }}
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No talks or lectures have been delivered yet. Check back later.
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'main/not-home.html' %}
+{% load static %}
+{% block nothome %}
+    <div id="not-home-content">
+        <h1>News and Info</h1>
+        <hr style="border-color:gray">
+        {% for ni in nis %}
+            {{ ni|safe }}
+            <p style="text-align:center;">&#10234;</p><br>
+        {% endfor %}
+    </div>
+{% endblock %}

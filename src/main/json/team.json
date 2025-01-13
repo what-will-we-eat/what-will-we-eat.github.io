@@ -1,0 +1,30 @@
+{
+    "johanna": {
+        "bio": "",
+        "img": "user.png",
+        "recent_publications": null,
+        "links": [
+            ["Personal Site", ["https://www.johannapettersson.se", "johannapettersson.se"]],
+            ["Uppsala University", ["https://www.uu.se/kontakt-och-organisation/personal?query=N10-1089", "Johanna @ uu.se"]]
+        ]
+    },
+    "robert": {
+        "bio": "",
+        "img": "user.png",
+        "recent_publications": null,
+        "links": [
+            ["ORCID", ["https://orcid.org/my-orcid?orcid=0000-0002-7647-4048", "0000-0002-7647-4048"]],
+            ["Github", ["https://github.com/bobborges", "github.com/bobborges"]],
+            ["Personal Site", ["https://robertborges.net","robertborges.net"]],
+            ["Uppsala University", ["https://www.uu.se/kontakt-och-organisation/personal?query=N17-1223", "Robert @ uu.se"]]
+        ]
+    },
+    "vendela": {
+        "bio": "",
+        "img": "user.png",
+        "recent_publications": null,
+        "links": [
+            ["Uppsala University", ["https://www.uu.se/kontakt-och-organisation/personal?query=N24-1397", "Vendela @ uu.se"]]
+        ]
+    }
+}
