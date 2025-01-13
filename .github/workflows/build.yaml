@@ -32,18 +32,18 @@ jobs:
         pip install lxml
         pip install bs4
         pip install bibtexparser
-        pop install docopt
         pip install beautifulsoup4
+        pip install docopt
         cd src && pip install bibtex2html.py && cd ..
 
     - name: bibtex to html
       run: |
         cd src/main/bibtex
         bibtex2html.py johanna/references.bib johanna/references.html -i "{'show_paper_style':'year'}"
-        bibtex2html.py robert/references.bib robert/references.html -i "{'show_paper_style':'year'}
-        bibtex2html.py vendela/references.bib vendela/references.html -i "{'show_paper_style':'year'}
-        bibtex2html.py project/publications.bib project/publications.html -i "{'show_paper_style':'year'}
-        bibtex2html.py project/talks.bib projects/talks.html -i "{'show_paper_style':'year'}
+        bibtex2html.py robert/references.bib robert/references.html -i "{'show_paper_style':'year'}"
+        bibtex2html.py vendela/references.bib vendela/references.html -i "{'show_paper_style':'year'}"
+        bibtex2html.py project/publications.bib project/publications.html -i "{'show_paper_style':'year'}"
+        bibtex2html.py project/talks.bib projects/talks.html -i "{'show_paper_style':'year'}"
         cd -
 
     - name: build static site
