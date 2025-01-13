@@ -20,7 +20,7 @@ By studying how the issue has been discussed over time and by different politica
     * Johanna Petterson Fürst, researcher
 * Co-investigators
     - Robert Borges, research-engineer
-    - Vendala Runold, PhD candidate
+    - Vendela Runold, PhD candidate
 
 ... more about the team [team](/team)
 
