@@ -1,4 +1,4 @@
-## Johanna Petterson Fürst
+## Johanna Pettersson Fürst
 
 Principle investigator
 
