@@ -17,10 +17,10 @@ By studying how the issue has been discussed over time and by different politica
 ## Project Members
 
 * Project Leader
-    * Johanna Petterson Fürst, researcher
+    * Johanna Pettersson Fürst, researcher
 * Co-investigators
     - Robert Borges, research-engineer
-    - Vendela Runold, PhD candidate
+    - Vendela Edberg, PhD candidate
 
 ... more about the team [team](/team)
 
